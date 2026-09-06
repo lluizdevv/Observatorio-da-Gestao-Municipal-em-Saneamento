@@ -2,7 +2,7 @@
 
 **Maturidade da gestão municipal: observado versus esperado**
 
-Plataforma analítica desenvolvida para o **2º Concurso de Reúso de Dados Abertos da Controladoria-Geral da União (Edital CGU nº 46/2026)**, que confronta a maturidade observada da governança municipal em saneamento básico com um escore esperado, estimado por um modelo de Machine Learning, a partir do perfil socioeconômico de cada um dos 5.570 municípios brasileiros.
+Plataforma analítica e exploratória desenvolvida para o **2º Concurso de Reúso de Dados Abertos da Controladoria-Geral da União (Edital CGU nº 46/2026)**, que compara a maturidade observada da governança municipal em saneamento básico com um escore esperado, estimado por um modelo de Machine Learning, a partir do perfil socioeconômico de cada um dos 5.570 municípios brasileiros. O dashboard reúne, em quatro módulos interativos, a apresentação institucional do projeto, a consulta individualizada por município, painéis territoriais agregados (Brasil, Região e Estado) e um explorador de dados livre para cruzamento de variáveis — todos construídos sobre a mesma base de 165 colunas, unificada a partir de quatro fontes oficiais de dados abertos.
 
 <img width="1435" height="325" alt="image" src="https://github.com/user-attachments/assets/b8aababc-e4c8-4282-9c9e-3fb5c39a596b" />
 
@@ -13,6 +13,7 @@ Plataforma analítica desenvolvida para o **2º Concurso de Reúso de Dados Aber
 ## Sumário
 
 - [Objetivo](#objetivo)
+- [Funcionalidades](#funcionalidades)
 - [Metodologia](#metodologia)
 - [Estrutura do repositório](#estrutura-do-repositório)
 - [Fontes de dados](#fontes-de-dados)
@@ -30,6 +31,34 @@ Plataforma analítica desenvolvida para o **2º Concurso de Reúso de Dados Aber
 - **Explorar**: navegar individualmente por município, identificando quais dimensões de governança em saneamento estão ativas segundo o SINISA.
 - **Comparar**: contrastar o índice de maturidade observado com a expectativa estatística modelada a partir do perfil socioeconômico do município.
 - **Diagnosticar**: oferecer panoramas territoriais agregados (Brasil, Grandes Regiões e Unidades da Federação) para apoiar a formulação de políticas públicas e o controle social.
+
+## Funcionalidades
+
+O dashboard é organizado em quatro abas, cada uma voltada a um tipo de uso analítico:
+
+### 📘 Sobre o Projeto
+Apresentação institucional da iniciativa: contexto do concurso, objetivo, as 8 dimensões de governança que compõem o índice de maturidade, a metodologia em 5 etapas (observado × esperado × resíduo × classificação) e a seção de **Dados e Transparência**, com acesso direto ao dataset final, ao dicionário de variáveis e aos notebooks de integração e de Machine Learning.
+
+### 🔍 Consulta Municipal
+Busca individualizada por município (nome ou UF), retornando:
+- índice observado, índice esperado pelo modelo, resíduo analítico e classificação comparativa;
+- gráfico de comparação observado × esperado na escala de 0 a 8;
+- contexto socioeconômico (população, receita per capita, taxa de aprovação escolar, receita orçamentária total);
+- as 8 dimensões de governança em saneamento (regulação, política municipal, plano, PMGIRS, sistema de informações, ouvidoria, conselho), cada uma sinalizada como presente ou ausente.
+
+### 🗺️ Panorama Territorial
+Visão agregada por nível territorial — Brasil, Região ou Estado (UF) — com:
+- métricas consolidadas (total de municípios, cobertura de dados, maturidade média, previsto médio, resíduo médio, % acima/abaixo do esperado);
+- mapa coroplético e ranking dos estados pela métrica escolhida;
+- distribuição do índice de maturidade e classificação comparativa de gestão;
+- dispersão socioeconômica (receita per capita × maturidade observada);
+- destaques dos municípios com maior resíduo positivo e negativo (maturidade muito acima ou muito abaixo da estimativa).
+
+### 📊 Explorar Dados
+Ambiente de exploração analítica livre, para cruzar qualquer combinação de variáveis do modelo e do perfil socioeconômico municipal:
+- seleção livre dos eixos X e Y, variável de cor/agrupamento e tipo de gráfico (dispersão, barra, box plot, histograma);
+- filtros por região, UF e classificação de gestão;
+- aviso automático de cobertura de dados sempre que a variável selecionada tiver registros ausentes.
 
 ## Metodologia
 
