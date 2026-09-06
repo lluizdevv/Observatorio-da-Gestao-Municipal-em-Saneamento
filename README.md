@@ -4,6 +4,8 @@
 
 Plataforma analítica desenvolvida para o **2º Concurso de Reúso de Dados Abertos da Controladoria-Geral da União (Edital CGU nº 46/2026)**, que confronta a maturidade observada da governança municipal em saneamento básico com um escore esperado, estimado por um modelo de Machine Learning, a partir do perfil socioeconômico de cada um dos 5.570 municípios brasileiros.
 
+<img width="1435" height="325" alt="image" src="https://github.com/user-attachments/assets/b8aababc-e4c8-4282-9c9e-3fb5c39a596b" />
+
 > ⚠️ **Aviso de rigor metodológico**: a classificação apresentada é **comparativa**, não causal. Ela mede o desempenho de um município em relação ao que um modelo estatístico esperaria dado seu perfil socioeconômico — não é um veredito de eficiência, competência ou qualidade de gestão.
 
 ---
