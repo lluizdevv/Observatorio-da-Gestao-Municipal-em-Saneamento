@@ -4,6 +4,7 @@ Observatório da Gestão Municipal do Saneamento: Maturidade da gestão municipa
 """
 
 import logging
+import os
 from dash import Dash, html
 from src.data_loader import load_data
 from src.components import create_sidebar, create_footer
@@ -47,6 +48,14 @@ app.layout = html.Div([
 # 4. Registro de Callbacks Modulares
 register_callbacks(app, DF)
 
+# Servidor WSGI usado pelo Gunicorn no Render.
+server = app.server
+
 # 5. Execução Local
 if __name__ == "__main__":
-    app.run(debug=True, dev_tools_ui=False, port=8050)
+    app.run(
+        debug=True,
+        dev_tools_ui=False,
+        host="0.0.0.0",
+        port=int(os.environ.get("PORT", 8050)),
+    )
