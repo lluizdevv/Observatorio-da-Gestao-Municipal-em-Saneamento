@@ -4,6 +4,8 @@
 
 Plataforma analítica e exploratória desenvolvida para o **2º Concurso de Reúso de Dados Abertos da Controladoria-Geral da União (Edital CGU nº 46/2026)**, que compara a maturidade observada da governança municipal em saneamento básico com um escore esperado, estimado por um modelo de Machine Learning, a partir do perfil socioeconômico de cada um dos 5.570 municípios brasileiros. O dashboard reúne, em quatro módulos interativos, a apresentação institucional do projeto, a consulta individualizada por município, painéis territoriais agregados (Brasil, Região e Estado) e um explorador de dados livre para cruzamento de variáveis — todos construídos sobre a mesma base de 165 colunas, unificada a partir de quatro fontes oficiais de dados abertos.
 
+🔗**LINK:** https://observatorio-da-gestao-municipal-em.onrender.com
+
 <img width="1435" height="325" alt="image" src="https://github.com/user-attachments/assets/b8aababc-e4c8-4282-9c9e-3fb5c39a596b" />
 
 > ⚠️ **Aviso de rigor metodológico**: a classificação apresentada é **comparativa**, não causal. Ela mede o desempenho de um município em relação ao que um modelo estatístico esperaria dado seu perfil socioeconômico — não é um veredito de eficiência, competência ou qualidade de gestão.
